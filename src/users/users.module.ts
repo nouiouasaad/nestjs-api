@@ -16,6 +16,7 @@ import { UsersServiceInterface } from './interfaces/users-service.interface';
       provide: UsersServiceInterface,
       useClass: UsersService
     }
-  ]
+  ],
+  exports: [UsersServiceInterface]
 })
 export class UsersModule { }
